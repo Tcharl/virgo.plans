@@ -10,7 +10,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   	<properties>
-		<framework.osgi.version>0.0.1.SNAPSHOT</framework.osgi.version>
+		<user.osgi.version>0.0.1.SNAPSHOT</user.osgi.version>
 		<virgo.user.repository>${virgo.path}/repository/usr</virgo.user.repository>
 		<virgo.pickup.repository>${virgo.path}/pickup</virgo.pickup.repository>
 	</properties>
