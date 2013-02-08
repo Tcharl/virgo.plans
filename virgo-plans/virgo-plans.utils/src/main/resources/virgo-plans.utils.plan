@@ -4,9 +4,10 @@
 	xsi:schemaLocation="
 					http://www.eclipse.org/virgo/schema/plan 
 					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
-<artifact name="com.google.guava" type="bundle" version="${com.googlecode.guava-osgi.version}"></artifact>
-	<artifact name="org.apache.servicemix.bundles.commons-beanutils" type="bundle" version="${org.apache.servicemix.bundles.commons-beanutils.version}"></artifact>
-	
+	<artifact name="com.google.guava" type="bundle"
+		version="${com.googlecode.guava-osgi.version}"></artifact>
+	<artifact name="org.apache.servicemix.bundles.commons-beanutils"
+		type="bundle" version="[1.8.3,2]"></artifact>
 	<artifact type="bundle" name="com.springsource.net.sf.cglib"
 		version="${com.springsource.net.sf.cglib.version}" />
 	<artifact type="bundle" name="com.springsource.org.junit"
@@ -15,5 +16,4 @@
 		version="${com.springsource.javax.inject.version}" />
 	<artifact type="bundle" name="com.springsource.org.atinject.tck"
 		version="${com.springsource.javax.inject.version}" />
-	
 </plan>
