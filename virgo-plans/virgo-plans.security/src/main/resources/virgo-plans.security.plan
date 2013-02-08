@@ -1,0 +1,15 @@
+<plan name="virgo-plans.security.plan" version="1.0.0" scoped="false"
+	atomic="true" xmlns="http://www.eclipse.org/virgo/schema/plan"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+					http://www.eclipse.org/virgo/schema/plan 
+					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
+	<artifact type="bundle" name="org.apache.servicemix.specs.jsr250-1.0"
+		version="${org.apache.servicemix.specs.jsr250-1.0.version}" />
+	<artifact type="bundle" name="org.springframework.security.core"
+		version="${org.springframework.version}" />
+	<artifact type="bundle" name="org.springframework.security.config"
+		version="${org.springframework.version}" />
+		<artifact type="bundle" name="org.springframework.security.web"
+		version="${org.springframework.version}" />
+</plan>
