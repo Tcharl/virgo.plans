@@ -1,0 +1,45 @@
+<plan name="net.osgiliath.framework.middleware.jms.plan" version="1.0.0"
+	scoped="false" atomic="true" xmlns="http://www.eclipse.org/virgo/schema/plan"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+					http://www.eclipse.org/virgo/schema/plan 
+					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
+	<artifact name="org.apache.geronimo.specs.geronimo-j2ee-management_1.1_spec" type="bundle" version="${geronimo-j2ee-management_1.1_spec.version}"></artifact>
+	<artifact name="org.apache.geronimo.specs.geronimo-jta_1.1_spec" type="bundle" version="${geronimo-jta_1.1_spec.version}"></artifact>
+	<artifact name="org.apache.geronimo.specs.geronimo-jms_1.1_spec" type="bundle" version="${geronimo-jms_1.1_spec.version}"></artifact>
+	<artifact name="org.apache.activemq.kahadb" type="bundle" version="${org.apache.activemq.version}"></artifact>
+	<artifact name="activemq-optional" type="bundle" version="${org.apache.activemq.version}"></artifact>
+	<artifact name="org.apache.activemq.activemq-core" type="bundle" version="${org.apache.activemq.version}"></artifact>
+	<artifact name="org.apache.activemq.activemq-pool" type="bundle" version="${org.apache.activemq.version}"></artifact>
+	<artifact name="org.apache.xbean.spring" type="bundle" version="${xbean-spring.version}"></artifact>
+	<artifact name="jackson-core-asl" type="bundle" version="${jackson-core-asl.version}"></artifact>
+	<artifact name="jackson-mapper-asl" type="bundle" version="${jackson-core-asl.version}"></artifact>
+	<artifact name="jmsconfig" type="configuration" version="0"></artifact>
+	<artifact name="net.osgiliath.framework_framework.middleware.jms.connectionfactory.exporter" type="bundle" version="[0,1)"></artifact>
+	<artifact name="org.apache.camel.camel-core" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.camel.camel-core-osgi" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.camel.camel-jackson" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.camel.camel-spring" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="websocket-config" type="configuration" version="0"></artifact>
+	<artifact name="org.apache.servicemix.bundles.jettison" version="${org.apache.servicemix.bundles.jettison.version}" type="bundle"></artifact>
+	<artifact name="org.apache.commons.lang" version="${commons-lang.version}" type="bundle"></artifact>
+	<artifact name="org.apache.servicemix.bundles.commons-collections" version="${org.apache.servicemix.bundles.commons-collections.version}" type="bundle"></artifact>
+	<artifact name="org.apache.servicemix.bundles.ezmorph" version="org.apache.servicemix.bundles.ezmorph" type="bundle"></artifact>
+	<artifact name="org.apache.servicemix.bundles.json-lib" version="org.apache.servicemix.bundles.json-lib.version" type="bundle"></artifact>
+	<artifact name="nu.xom" type="bundle" version="xom.version"></artifact>
+	<artifact name="com.springsource.org.xmlpull" type="bundle" version="${com.springsource.org.xmlpull.version}"></artifact>
+	<artifact name="org.apache.servicemix.bundles.xstream" type="bundle" version="${org.apache.servicemix.bundles.xstream.version}"></artifact>
+	<artifact name="org.apache.servicemix.bundles.woodstox" type="bundle" version="${org.apache.servicemix.bundles.woodstox.version}"></artifact>
+	<artifact name="org.apache.servicemix.bundles.oro" version="${org.apache.servicemix.bundles.oro.version}" type="bundle"></artifact>	
+	<artifact name="org.apache.camel.camel-xmljson" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.camel.camel-xstream" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.camel.camel-jms" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.camel.camel-websocket" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.activemq.activemq-camel" type="bundle" version="${org.apache.activemq.version}"></artifact>
+	<artifact name="net.osgiliath.framework_framework.middleware.websock.connectionfactory" version="[0, 1)" type="bundle"></artifact>
+	<artifact name="net.osgiliath.framework_framework.middleware.jms.camel" type="bundle" version="[0, 1)"></artifact>
+	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="[1, 2)"></artifact>
+	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="${org.apache.servicemix.bundles.jdom.version}"></artifact>
+	
+	
+</plan>

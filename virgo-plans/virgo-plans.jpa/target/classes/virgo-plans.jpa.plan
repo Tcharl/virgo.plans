@@ -1,0 +1,34 @@
+<plan name="virgo-plans.jpa.plan" version="1.0.0"
+	scoped="false" atomic="true" xmlns="http://www.eclipse.org/virgo/schema/plan"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+					http://www.eclipse.org/virgo/schema/plan 
+					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
+	<artifact type="bundle" name="org.eclipse.gemini.jpa" version="[1.0.0, 2.0)" />
+	<artifact type="bundle" name="osgi.enterprise" version="4.2.0" />
+	<artifact type="bundle" name="org.apache.derby" version="{com.springsource.org.apache.derby.client.version}" />
+	<artifact type="bundle" name="org.eclipse.gemini.dbaccess.derby"
+		version="[1.0.0.RELEASE, 2)" />
+	<artifact type="bundle" name="javax.persistence" version="2.0.4.v201112161009" />
+
+	<artifact type="bundle" name="org.eclipse.persistence.asm"
+		version="3.3.1.v201206041142" />
+	<artifact type="bundle" name="org.eclipse.persistence.antlr"
+		version="3.2.0.v201206041011" />
+	<artifact type="bundle" name="org.eclipse.persistence.core"
+		version="2.4.0" />
+	<artifact type="bundle" name="org.eclipse.persistence.jpa"
+		version="2.4.0" />
+	<artifact type="bundle" name="org.apache.servicemix.bundles.commons-pool"
+		version="1.5.4_4" />
+	<artifact type="bundle" name="org.apache.servicemix.bundles.commons-dbcp"
+		version="1.4_2" />
+	<artifact type="bundle" name="org.glassfish.javax.annotation"
+		version="3.1.1" />
+		<artifact type="bundle" name="org.springframework.data.core"
+		version="1.3.2.RELEASE" />
+	
+	<artifact type="bundle" name="spring-data-jpa" version="[1,2)" />
+
+
+</plan>

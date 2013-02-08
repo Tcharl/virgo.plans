@@ -1,0 +1,17 @@
+<plan name="virgo-plans.validation.plan" version="1.0.0" scoped="false"
+	atomic="true" xmlns="http://www.eclipse.org/virgo/schema/plan"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+					http://www.eclipse.org/virgo/schema/plan 
+					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
+
+	<!-- <artifact type="plan" name="net.osgiliath.framework.commons.injection.plan"
+		version="[1, 2)" /> -->
+	<artifact type="bundle" name="com.springsource.javax.validation"
+		version="${com.springsource.javax.validation.version}" />
+	<artifact type="bundle" name="org.hibernate.validator"
+		version="${org.hibernate.validator.version}" />
+	<artifact type="bundle"
+		name="org.hibernate.osgi_org.hibernate.validation.osgi.service"
+		version="${org.hibernate.validation.osgi.services.version}" />
+</plan>
