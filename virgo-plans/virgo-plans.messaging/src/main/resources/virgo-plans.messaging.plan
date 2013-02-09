@@ -1,4 +1,4 @@
-<plan name="net.osgiliath.framework.middleware.jms.plan" version="1.0.0"
+<plan name="virgo-plans.messaging.plan" version="1.0.0"
 	scoped="false" atomic="true" xmlns="http://www.eclipse.org/virgo/schema/plan"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
@@ -21,16 +21,16 @@
 	<artifact name="org.apache.camel.camel-jackson" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-spring" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="websocket-config" type="configuration" version="0"></artifact>
-	<artifact name="org.apache.servicemix.bundles.jettison" version="${org.apache.servicemix.bundles.jettison.version}" type="bundle"></artifact>
+	<artifact name="org.codehaus.jettison.jettison" version="${jettison.version}" type="bundle"></artifact>
 	<artifact name="org.apache.commons.lang" version="${commons-lang.version}" type="bundle"></artifact>
-	<artifact name="org.apache.servicemix.bundles.commons-collections" version="${org.apache.servicemix.bundles.commons-collections.version}" type="bundle"></artifact>
-	<artifact name="org.apache.servicemix.bundles.ezmorph" version="org.apache.servicemix.bundles.ezmorph" type="bundle"></artifact>
-	<artifact name="org.apache.servicemix.bundles.json-lib" version="org.apache.servicemix.bundles.json-lib.version" type="bundle"></artifact>
-	<artifact name="nu.xom" type="bundle" version="xom.version"></artifact>
+	<artifact name="org.apache.servicemix.bundles.commons-collections" version="[3.2.1, 4)" type="bundle"></artifact>
+	<artifact name="org.apache.servicemix.bundles.ezmorph" version="[1.0.6,2)" type="bundle"></artifact>
+	<artifact name="org.apache.servicemix.bundles.json-lib" version="[2.4,3)" type="bundle"></artifact>
+	<artifact name="nu.xom" type="bundle" version="${xom.version}"></artifact>
 	<artifact name="com.springsource.org.xmlpull" type="bundle" version="${com.springsource.org.xmlpull.version}"></artifact>
-	<artifact name="org.apache.servicemix.bundles.xstream" type="bundle" version="${org.apache.servicemix.bundles.xstream.version}"></artifact>
-	<artifact name="org.apache.servicemix.bundles.woodstox" type="bundle" version="${org.apache.servicemix.bundles.woodstox.version}"></artifact>
-	<artifact name="org.apache.servicemix.bundles.oro" version="${org.apache.servicemix.bundles.oro.version}" type="bundle"></artifact>	
+	<artifact name="org.apache.servicemix.bundles.xstream" type="bundle" version="[1.4.3, 2)"></artifact>
+	<artifact name="org.apache.servicemix.bundles.woodstox" type="bundle" version="[3.2.9, 4)"></artifact>
+	<artifact name="org.apache.servicemix.bundles.oro" version="[2.0.8,3)" type="bundle"></artifact>	
 	<artifact name="org.apache.camel.camel-xmljson" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-xstream" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-jms" version="${camel-version}" type="bundle"></artifact>
@@ -39,7 +39,7 @@
 	<artifact name="net.osgiliath.framework_framework.middleware.websock.connectionfactory" version="[0, 1)" type="bundle"></artifact>
 	<artifact name="net.osgiliath.framework_framework.middleware.jms.camel" type="bundle" version="[0, 1)"></artifact>
 	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="[1, 2)"></artifact>
-	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="${org.apache.servicemix.bundles.jdom.version}"></artifact>
+	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="[2,3)"></artifact>
 	
 	
 </plan>
