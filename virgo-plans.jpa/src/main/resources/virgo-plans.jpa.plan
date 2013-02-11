@@ -6,7 +6,7 @@
 					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
 					<artifact name="com.atomikos.transactions-osgi" type="bundle" version="${com.atomikos.version}"></artifact>
 					<artifact name="net.osgiliath.framework_helpers.atomikos.eclipselink.transactionsession.customizer" type="bundle"></artifact>
-					
+					<artifact name="org.eclipse.gemini.naming" type="bundle"></artifact>
 	<artifact type="bundle" name="org.eclipse.gemini.jpa" version="[1.0.0, 2.0)" />
 	<artifact type="bundle" name="osgi.enterprise" version="${org.osgi.enterprise.version}" />
 	<artifact type="bundle" name="org.apache.derby" version="[10,11]" />

@@ -38,6 +38,8 @@
 							<fromFile>gemini-dbaccess-1.0.0.RELEASE.zip</fromFile>
 							<toDir>${project.basedir}/jars</toDir>
 						</configuration>
+						
+						
 					</execution>
 					<execution>
 						<id>gemini-jpa</id>
@@ -48,6 +50,18 @@
 						<configuration>
 							<url><![CDATA[http://eclipse.ialto.com/gemini/jpa/r1.1/]]></url>
 							<fromFile>gemini-jpa-1.1.0.RELEASE.zip</fromFile>
+							<toDir>${project.basedir}/jars</toDir>
+						</configuration>
+					</execution>
+					<execution>
+						<id>gemini-naming</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>download-single</goal>
+						</goals>
+						<configuration>
+							<url><![CDATA[http://eclipse.ialto.com/gemini/naming/r1.0/]]></url>
+							<fromFile>gemini-naming-1.0.1.RELEASE.zip</fromFile>
 							<toDir>${project.basedir}/jars</toDir>
 						</configuration>
 					</execution>
@@ -81,6 +95,18 @@
 							<outputDirectory>${project.basedir}/jars</outputDirectory>
 						</configuration>
 					</execution>
+					<execution>
+						<id>cp-gemini-naming</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>wget</goal>
+						</goals>
+						<configuration>
+							<url>http://eclipse.ialto.com/gemini/naming/r1.0/gemini-naming-1.0.1.RELEASE.zip</url>
+							<unpack>true</unpack>
+							<outputDirectory>${project.basedir}/jars</outputDirectory>
+						</configuration>
+					</execution>
 				</executions>
 			</plugin>
 			<plugin>
@@ -99,8 +125,13 @@
 								<copy
 									file="${project.basedir}/jars/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar"
 									tofile="${virgo.user.repository}/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar" />
+									<copy
+									file="${project.basedir}/jars/org.eclipse.gemini.naming-1.0.1.RELEASE.jar"
+									tofile="${virgo.user.repository}/org.eclipse.gemini.naming-1.0.1.RELEASE.jar" />
+								
 								<copy file="${project.build.directory}/classes/virgo-plans.jpa.plan"
 									tofile="${virgo.pickup.repository}/virgo-plans.jpa.plan" />
+									
 							</tasks>
 						</configuration>
 						<goals>
