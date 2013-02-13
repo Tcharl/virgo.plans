@@ -1,12 +1,15 @@
-<plan name="virgo-plans.jpa.plan" version="1.0.0"
-	scoped="false" atomic="true" xmlns="http://www.eclipse.org/virgo/schema/plan"
+<plan name="virgo-plans.jpa.plan" version="1.0.0" scoped="false"
+	atomic="true" xmlns="http://www.eclipse.org/virgo/schema/plan"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
 					http://www.eclipse.org/virgo/schema/plan 
 					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
-					<artifact name="com.atomikos.transactions-osgi" type="bundle" version="${com.atomikos.version}"></artifact>
-					<artifact name="net.osgiliath.framework_helpers.atomikos.eclipselink.transactionsession.customizer" type="bundle"></artifact>
-					<artifact name="org.eclipse.gemini.naming" type="bundle"></artifact>
+	<artifact name="com.atomikos.transactions-osgi" type="bundle"
+		version="${com.atomikos.version}"></artifact>
+	<artifact name="org.eclipse.gemini.naming" type="bundle"></artifact>
+	<artifact
+		name="net.osgiliath.framework_helpers.atomikos.eclipselink.transactionsession.customizer"
+		type="bundle"></artifact>
 	<artifact type="bundle" name="org.eclipse.gemini.jpa" version="[1.0.0, 2.0)" />
 	<artifact type="bundle" name="osgi.enterprise" version="${org.osgi.enterprise.version}" />
 	<artifact type="bundle" name="org.apache.derby" version="[10,11]" />
@@ -28,9 +31,9 @@
 		version="[1.4,1.5)" />
 	<artifact type="bundle" name="org.glassfish.javax.annotation"
 		version="${org.glassfish.javax.annotation.version}" />
-		<artifact type="bundle" name="org.springframework.data.core"
+	<artifact type="bundle" name="org.springframework.data.core"
 		version="${spring-data-commons-core.version}" />
-	
+
 	<artifact type="bundle" name="spring-data-jpa" version="[1,2)" />
 
 
