@@ -20,6 +20,7 @@
 	<artifact name="org.apache.camel.camel-core-osgi" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-jackson" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-spring" version="${camel-version}" type="bundle"></artifact>
+	<artifact name="org.apache.camel.camel-osgi" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="websocket-config" type="configuration" version="0"></artifact>
 	<artifact name="org.codehaus.jettison.jettison" version="${jettison.version}" type="bundle"></artifact>
 	<artifact name="org.apache.commons.lang" version="${commons-lang.version}" type="bundle"></artifact>
