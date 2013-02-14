@@ -8,9 +8,9 @@
 	<artifact name="org.apache.geronimo.specs.geronimo-jta_1.1_spec" type="bundle" version="${geronimo-jta_1.1_spec.version}"></artifact>
 	<artifact name="org.apache.geronimo.specs.geronimo-jms_1.1_spec" type="bundle" version="${geronimo-jms_1.1_spec.version}"></artifact>
 	<artifact name="org.apache.activemq.kahadb" type="bundle" version="${org.apache.activemq.version}"></artifact>
-	<artifact name="activemq-optional" type="bundle" version="${org.apache.activemq.version}"></artifact>
 	<artifact name="org.apache.activemq.activemq-core" type="bundle" version="${org.apache.activemq.version}"></artifact>
 	<artifact name="org.apache.activemq.activemq-pool" type="bundle" version="${org.apache.activemq.version}"></artifact>
+	<artifact name="activemq-optional" type="bundle" version="${org.apache.activemq.version}"></artifact>
 	<artifact name="org.apache.xbean.spring" type="bundle" version="${xbean-spring.version}"></artifact>
 	<artifact name="jackson-core-asl" type="bundle" version="${jackson-core-asl.version}"></artifact>
 	<artifact name="jackson-mapper-asl" type="bundle" version="${jackson-core-asl.version}"></artifact>
@@ -37,8 +37,8 @@
 	<artifact name="org.apache.camel.camel-jms" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-websocket" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.activemq.activemq-camel" type="bundle" version="${org.apache.activemq.version}"></artifact>
-	<artifact name="net.osgiliath.framework_framework.middleware.websock.connectionfactory" version="[0, 1)" type="bundle"></artifact>
-	<artifact name="net.osgiliath.framework_framework.middleware.jms.camel" type="bundle" version="[0, 1)"></artifact>
+	<!-- TODO let's see how I can correct (maybe amq-jaas dep)<artifact name="net.osgiliath.framework_framework.middleware.websock.connectionfactory" version="[0, 1)" type="bundle"></artifact>
+	 --><artifact name="net.osgiliath.framework_framework.middleware.jms.camel" type="bundle" version="[0, 1)"></artifact>
 	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="[1, 2)"></artifact>
 	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="[2,3)"></artifact>
 	
