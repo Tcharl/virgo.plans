@@ -53,7 +53,7 @@
 							<toDir>${project.basedir}/jars</toDir>
 						</configuration>
 					</execution>
-					<execution>
+					<!-- <execution>
 						<id>gemini-naming</id>
 						<phase>process-resources</phase>
 						<goals>
@@ -64,7 +64,7 @@
 							<fromFile>gemini-naming-1.0.1.RELEASE.zip</fromFile>
 							<toDir>${project.basedir}/jars</toDir>
 						</configuration>
-					</execution>
+					</execution> -->
 				</executions>
 			</plugin>
 			<plugin>
@@ -95,7 +95,7 @@
 							<outputDirectory>${project.basedir}/jars</outputDirectory>
 						</configuration>
 					</execution>
-					<execution>
+					<!-- <execution>
 						<id>cp-gemini-naming</id>
 						<phase>process-resources</phase>
 						<goals>
@@ -106,7 +106,7 @@
 							<unpack>true</unpack>
 							<outputDirectory>${project.basedir}/jars</outputDirectory>
 						</configuration>
-					</execution>
+					</execution> -->
 				</executions>
 			</plugin>
 			<plugin>
@@ -125,9 +125,9 @@
 								<copy
 									file="${project.basedir}/jars/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar"
 									tofile="${virgo.user.repository}/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar" />
-									<copy
+								<!-- 	<copy
 									file="${project.basedir}/jars/org.eclipse.gemini.naming-1.0.1.RELEASE.jar"
-									tofile="${virgo.user.repository}/org.eclipse.gemini.naming-1.0.1.RELEASE.jar" />
+									tofile="${virgo.user.repository}/org.eclipse.gemini.naming-1.0.1.RELEASE.jar" /> -->
 								
 								<copy file="${project.build.directory}/classes/virgo-plans.jpa.plan"
 									tofile="${virgo.pickup.repository}/virgo-plans.jpa.plan" />
@@ -244,7 +244,7 @@
 									<type>jar</type>
 									<outputDirectory>${virgo.user.repository}</outputDirectory>
 								</artifactItem>
-								<artifactItem>
+							<!-- 	<artifactItem>
 										<groupId>net.osgiliath.framework</groupId>
 			<artifactId>helpers.atomikos.eclipselink.transactionsession.customizer</artifactId>
 									<overWrite>false</overWrite>
@@ -258,7 +258,7 @@
 									<overWrite>false</overWrite>
 									<type>jar</type>
 									<outputDirectory>${virgo.user.repository}</outputDirectory>
-								</artifactItem>
+								</artifactItem> -->
 							</artifactItems>
 						</configuration>
 					</execution>
@@ -267,7 +267,7 @@
 		</plugins>
 	</build>
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.osgiliath.framework</groupId>
 			<version>0.0.1-SNAPSHOT</version>
 			<artifactId>helpers.atomikos.eclipselink.transactionsession.customizer</artifactId>
@@ -276,7 +276,7 @@
 		<dependency>
 			<groupId>com.atomikos</groupId>
 			<artifactId>transactions-osgi</artifactId>
-		</dependency>
+		</dependency> -->
 		
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
