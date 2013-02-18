@@ -67,8 +67,8 @@
 									<outputDirectory>${virgo.path}/repository/usr</outputDirectory>
 								</artifactItem>
 								<artifactItem>
-									<groupId>org.hibernate</groupId>
-									<artifactId>validation.osgi.service</artifactId>
+									<groupId>net.osgiliath.framework</groupId>
+			<artifactId>helpers.validation.osgi.services</artifactId>
 									<overWrite>false</overWrite>
 									<type>jar</type>
 									<outputDirectory>${virgo.path}/repository/usr</outputDirectory>
@@ -90,8 +90,9 @@
 			<artifactId>hibernate-validator</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>validation.osgi.service</artifactId>
+			<groupId>net.osgiliath.framework</groupId>
+			<artifactId>helpers.validation.osgi.services</artifactId>
+			 <version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
