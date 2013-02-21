@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.osgiliath.framework</groupId>
 		<artifactId>virgo-plans</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2</version>
 	</parent>
 	<artifactId>virgo-plans.messaging</artifactId>
 	<packaging>jar</packaging>
@@ -30,16 +29,9 @@
 						<phase>install</phase>
 						<configuration>
 							<tasks>
-								<copy
-									file="${project.build.directory}/classes/virgo-plans.messaging.plan"
-									tofile="${virgo.pickup.repository}/virgo-plans.messaging.plan" />
-								<copy
-									file="${project.basedir}/src/main/resources/jmsconfig.properties"
-
-									tofile="${virgo.path}/repository/usr/jmsconfig.properties" />
-								<copy
-									file="${project.basedir}/src/main/resources/websocket-config.properties"
-									tofile="${virgo.path}/repository/usr/websocket-config.properties" />
+								<copy file="${project.build.directory}/classes/virgo-plans.messaging.plan" tofile="${virgo.pickup.repository}/virgo-plans.messaging.plan" />
+								<copy file="${project.basedir}/src/main/resources/jmsconfig.properties" tofile="${virgo.path}/repository/usr/jmsconfig.properties" />
+								<copy file="${project.basedir}/src/main/resources/websocket-config.properties" tofile="${virgo.path}/repository/usr/websocket-config.properties" />
 							</tasks>
 						</configuration>
 						<goals>
@@ -76,32 +68,16 @@
 								</artifactItem>
 								<artifactItem>
 									<groupId>net.osgiliath.framework</groupId>
-									<version>0.0.1-SNAPSHOT</version>
-									<artifactId>framework.middleware.jms.camel</artifactId>
+									<version>${osgiliath.helpers.version}</version>
+									<artifactId>helpers.activemq.jms.connectionfactory.exporter</artifactId>
 									<overWrite>false</overWrite>
 									<type>jar</type>
 									<outputDirectory>${virgo.path}/repository/usr</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>net.osgiliath.framework</groupId>
-									<artifactId>framework.middleware.jms.connectionfactory.exporter</artifactId>
-									<version>0.0.1-SNAPSHOT</version>
-									<overWrite>false</overWrite>
-									<type>jar</type>
-									<outputDirectory>${virgo.path}/repository/usr</outputDirectory>
-								</artifactItem>
-								<artifactItem>
-									<groupId>net.osgiliath.framework</groupId>
-									<version>0.0.1-SNAPSHOT</version>
-									<artifactId>framework.middleware.websock.camel</artifactId>
-									<overWrite>false</overWrite>
-									<type>jar</type>
-									<outputDirectory>${virgo.path}/repository/usr</outputDirectory>
-								</artifactItem>
-								<artifactItem>
-									<groupId>net.osgiliath.framework</groupId>
-									<artifactId>framework.middleware.websock.connectionfactory</artifactId>
-									<version>0.0.1-SNAPSHOT</version>
+									<version>${osgiliath.helpers.version}</version>
+									<artifactId>helpers.activemq.websocket.connectionfactory.exporter</artifactId>
 									<overWrite>false</overWrite>
 									<type>jar</type>
 									<outputDirectory>${virgo.path}/repository/usr</outputDirectory>
@@ -353,19 +329,15 @@
 		</dependency>
 		<dependency>
 			<groupId>net.osgiliath.framework</groupId>
-			<version>0.0.1-SNAPSHOT</version>
-			<artifactId>framework.middleware.jms.camel</artifactId>
+			<version>${osgiliath.helpers.version}</version>
+			<artifactId>helpers.activemq.jms.connectionfactory.exporter</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>net.osgiliath.framework</groupId>
-			<artifactId>framework.middleware.jms.connectionfactory.exporter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>helpers.activemq.websocket.connectionfactory.exporter</artifactId>
+			<version>${osgiliath.helpers.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>net.osgiliath.framework</groupId>
-			<artifactId>framework.middleware.websock.connectionfactory</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-camel</artifactId>

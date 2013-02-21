@@ -3,7 +3,7 @@
   <parent>
     <groupId>net.osgiliath.framework</groupId>
     <artifactId>virgo-plans</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
   </parent>
   <artifactId>virgo-plans.security</artifactId>
   <packaging>jar</packaging>
@@ -29,9 +29,7 @@
 						<phase>install</phase>
 						<configuration>
 							<tasks>
-								<copy
-									file="${project.build.directory}/classes/virgo-plans.security.plan"
-									tofile="${virgo.pickup.repository}/virgo-plans.security.plan" />
+								<copy file="${project.build.directory}/classes/virgo-plans.security.plan" tofile="${virgo.pickup.repository}/virgo-plans.security.plan" />
 							</tasks>
 						</configuration>
 						<goals>

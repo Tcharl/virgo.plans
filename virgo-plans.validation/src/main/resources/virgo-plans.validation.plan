@@ -12,6 +12,6 @@
 	<artifact type="bundle" name="org.hibernate.validator"
 		version="${org.hibernate.validator.version}" />
 	<artifact type="bundle"
-		name="org.hibernate.osgi_org.hibernate.validation.osgi.service"
-		version="${org.hibernate.validation.osgi.services.version}" />
+		name="net.osgiliath.framework_helpers.validation.osgi.services"
+		version="${osgiliath.helpers.version}" />
 </plan>

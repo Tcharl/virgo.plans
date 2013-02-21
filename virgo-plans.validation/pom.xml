@@ -3,7 +3,7 @@
   <parent>
     <groupId>net.osgiliath.framework</groupId>
     <artifactId>virgo-plans</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
   </parent>
   <artifactId>virgo-plans.validation</artifactId>
   <packaging>jar</packaging>
@@ -29,9 +29,7 @@
 						<phase>install</phase>
 						<configuration>
 							<tasks>
-								<copy
-									file="${project.build.directory}/classes/virgo-plans.validation.plan"
-									tofile="${virgo.pickup.repository}/virgo-plans.validation.plan" />
+								<copy file="${project.build.directory}/classes/virgo-plans.validation.plan" tofile="${virgo.pickup.repository}/virgo-plans.validation.plan" />
 							</tasks>
 						</configuration>
 						<goals>
@@ -92,7 +90,7 @@
 		<dependency>
 			<groupId>net.osgiliath.framework</groupId>
 			<artifactId>helpers.validation.osgi.services</artifactId>
-			 <version>0.0.1-SNAPSHOT</version>
+			 <version>${osgiliath.helpers.version}</version>
 		</dependency>
 	</dependencies>
 </project>

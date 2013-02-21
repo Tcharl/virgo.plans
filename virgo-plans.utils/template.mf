@@ -2,4 +2,4 @@ Bundle-ManifestVersion: 2
 Bundle-Name: ${project.artifactId}
 Bundle-Vendor: Osgiliath Inc.
 Bundle-SymbolicName: ${project.groupId}_${project.artifactId}
-Bundle-Version: ${user.osgi.version}
+Bundle-Version: ${project.version}

@@ -15,7 +15,7 @@
 	<artifact name="jackson-core-asl" type="bundle" version="${jackson-core-asl.version}"></artifact>
 	<artifact name="jackson-mapper-asl" type="bundle" version="${jackson-core-asl.version}"></artifact>
 	<artifact name="jmsconfig" type="configuration" version="0"></artifact>
-	<artifact name="net.osgiliath.framework_framework.middleware.jms.connectionfactory.exporter" type="bundle" version="[0,1)"></artifact>
+	<!-- <artifact name="net.osgiliath.framework_framework.middleware.jms.connectionfactory.exporter" type="bundle" version="[0,1)"></artifact> -->
 	<artifact name="org.apache.camel.camel-core" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-core-osgi" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.camel.camel-jackson" version="${camel-version}" type="bundle"></artifact>
@@ -38,7 +38,7 @@
 	<artifact name="org.apache.camel.camel-websocket" version="${camel-version}" type="bundle"></artifact>
 	<artifact name="org.apache.activemq.activemq-camel" type="bundle" version="${org.apache.activemq.version}"></artifact>
 	<!-- TODO let's see how I can correct (maybe amq-jaas dep)<artifact name="net.osgiliath.framework_framework.middleware.websock.connectionfactory" version="[0, 1)" type="bundle"></artifact>
-	 --><artifact name="net.osgiliath.framework_framework.middleware.jms.camel" type="bundle" version="[0, 1)"></artifact>
+	 --><artifact name="net.osgiliath.framework_helpers.activemq.jms.connectionfactory.exporter" type="bundle" version="${osgiliath.helpers.version}"></artifact>
 	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="[1, 2)"></artifact>
 	<artifact name="org.apache.servicemix.bundles.jdom" type="bundle" version="[2,3)"></artifact>
 	

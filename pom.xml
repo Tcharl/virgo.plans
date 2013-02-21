@@ -7,10 +7,9 @@
 	</parent>
   <groupId>net.osgiliath.framework</groupId>
   <artifactId>virgo-plans</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2</version>
   <packaging>pom</packaging>
   	<properties>
-		<user.osgi.version>0.0.1.SNAPSHOT</user.osgi.version>
 		<virgo.user.repository>${virgo.path}/repository/usr</virgo.user.repository>
 		<virgo.pickup.repository>${virgo.path}/pickup</virgo.pickup.repository>
 	</properties>

@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.osgiliath.framework</groupId>
 		<artifactId>virgo-plans</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2</version>
 	</parent>
 	<artifactId>virgo-plans.jpa</artifactId>
 	<packaging>jar</packaging>
@@ -116,21 +115,13 @@
 						<phase>install</phase>
 						<configuration>
 							<tasks>
-								<copy
-									file="${project.basedir}/jars/gemini-dbaccess-1.0.0.RELEASE/org.apache.derby_10.5.1.1.jar"
-									tofile="${virgo.user.repository}/org.apache.derby_10.5.1.1.jar" />
-								<copy
-									file="${project.basedir}/jars/gemini-dbaccess-1.0.0.RELEASE/org.eclipse.gemini.dbaccess.derby_1.0.0.RELEASE.jar"
-									tofile="${virgo.user.repository}/org.eclipse.gemini.dbaccess.derby_1.0.0.RELEASE.jar" />
-								<copy
-									file="${project.basedir}/jars/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar"
-									tofile="${virgo.user.repository}/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar" />
-								<!-- 	<copy
-									file="${project.basedir}/jars/org.eclipse.gemini.naming-1.0.1.RELEASE.jar"
+								<copy file="${project.basedir}/jars/gemini-dbaccess-1.0.0.RELEASE/org.apache.derby_10.5.1.1.jar" tofile="${virgo.user.repository}/org.apache.derby_10.5.1.1.jar" />
+								<copy file="${project.basedir}/jars/gemini-dbaccess-1.0.0.RELEASE/org.eclipse.gemini.dbaccess.derby_1.0.0.RELEASE.jar" tofile="${virgo.user.repository}/org.eclipse.gemini.dbaccess.derby_1.0.0.RELEASE.jar" />
+								<copy file="${project.basedir}/jars/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar" tofile="${virgo.user.repository}/org.eclipse.gemini.jpa-1.1.0.RELEASE.jar" />
+								<!-- 	<copy file="${project.basedir}/jars/org.eclipse.gemini.naming-1.0.1.RELEASE.jar"
 									tofile="${virgo.user.repository}/org.eclipse.gemini.naming-1.0.1.RELEASE.jar" /> -->
 								
-								<copy file="${project.build.directory}/classes/virgo-plans.jpa.plan"
-									tofile="${virgo.pickup.repository}/virgo-plans.jpa.plan" />
+								<copy file="${project.build.directory}/classes/virgo-plans.jpa.plan" tofile="${virgo.pickup.repository}/virgo-plans.jpa.plan" />
 									
 							</tasks>
 						</configuration>
