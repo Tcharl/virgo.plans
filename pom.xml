@@ -1,23 +1,45 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
 		<groupId>net.osgiliath</groupId>
 		<version>LATEST</version>
 		<artifactId>osgiliath.projects.definition</artifactId>
 	</parent>
-  <groupId>net.osgiliath.framework</groupId>
-  <artifactId>virgo-plans</artifactId>
-  <version>0.0.2</version>
-  <packaging>pom</packaging>
-  	<properties>
+	<groupId>net.osgiliath.framework</groupId>
+	<artifactId>virgo-plans</artifactId>
+	<version>0.0.2</version>
+	<packaging>pom</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>downloads-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<licenses>
+		<license>
+			<name>Eclipse public Licence</name>
+			<url>http://www.eclipse.org/legal/epl-v10.html</url>
+		</license>
+	</licenses>
+	<scm>
+		<connection>scm:git:http://subversion.osgiliath.net/git-private/${project.artifactId}.git/master</connection>
+		<developerConnection>scm:git:http://subversion.osgiliath.net/git-private/${project.artifactId}.git/master</developerConnection>
+		<url>http://bugzilla.osgiliath.net/projects/osgiliath-frameworks/repository</url>
+	</scm>
+	<properties>
 		<virgo.user.repository>${virgo.path}/repository/usr</virgo.user.repository>
 		<virgo.pickup.repository>${virgo.path}/pickup</virgo.pickup.repository>
+		<repositoryName>virgo.plans</repositoryName>
+		<repositoryOwner>Tcharl</repositoryOwner>
 	</properties>
-  	<modules>
-  		<module>virgo-plans.utils</module>
-  		<module>virgo-plans.jpa</module>
-  		<module>virgo-plans.validation</module>
-  		<module>virgo-plans.security</module>
-  		<module>virgo-plans.messaging</module>
-  	</modules>
+	<modules>
+		<module>virgo-plans.utils</module>
+		<module>virgo-plans.jpa</module>
+		<module>virgo-plans.validation</module>
+		<module>virgo-plans.security</module>
+		<module>virgo-plans.messaging</module>
+	</modules>
 </project>
