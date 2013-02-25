@@ -3,16 +3,16 @@ This is bunch of Eclipse Virgo plans to enable a fully-fledged osgiliath ESB pro
 
 h2. How to use?
 
-First you have to configure your maven settings.xml to mirror the osgiliath nexus (http://bugzilla.osgiliath.net/projects/osgiliath-superpom/wiki).
+First you have to configure your maven settings.xml to mirror the osgiliath nexus (http://nexus.osgiliath.net/nexus/content/groups/public/) or install superpom and helpers projects.
 
-In a second time, configure in this file a maven active profile with the property virgo.path pointing on your root virgo installation (3.6.0.RELEASE at the time I'm writing). 
+In a second time, configure in this file a maven active profile with the property virgo.path pointing on your root Virgo-jetty installation (3.6.0.RELEASE at the time I'm writing). 
 Add entry javax.persistence.metamodel to the spring orm MANIFEST (on the repository/ext folder).
 
 Finally just run mvn clean install and launch Virgo!
 
 h2. Architecture
 
-You can clone the git project at http://subversion.osgiliath.net/git-private/karaf.features.git
+You can clone the git project at https://github.com/Tcharl/virgo.plans.git
 
 It's composed of a parent pom and multiples modules (plans):
 
@@ -20,4 +20,4 @@ It's composed of a parent pom and multiples modules (plans):
 * jpa for persistence
 * validation for hibernate validation (with an osgi service)
 * security for spring security
-* messaging for jms and websocket (jms connection is exported)
+* messaging with camel for jms and websocket (jms connection is exported)
